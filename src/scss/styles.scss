@@ -1,6 +1,7 @@
 $color-green: rgb(21, 171, 13);
 $color-white: rgb(255, 255, 255);
 $color-blue:  rgb(38, 104, 255);
+$color-black: rgb(0, 0, 0);
 
 * {
     box-sizing: border-box;
@@ -20,6 +21,28 @@ body {
     background: #000;
     color: #fff;
     font-family: 'Consolas', 'Ubuntu Mono', 'Courier New', monospace;
+}
+
+a {
+    color: $color-white;
+    text-decoration: none;
+}
+
+nav {
+    display: grid;
+    grid-column-gap: .5rem;
+    grid-auto-flow: column;
+    justify-content: start;
+    margin: -.25rem -.5rem;
+
+    a {
+        padding: .25rem .5rem;
+
+        &:hover {
+            background: $color-white;
+            color: $color-black;
+        }
+    }
 }
 
 #wrapper {
