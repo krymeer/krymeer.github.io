@@ -1,0 +1,73 @@
+// TODO improve this stub
+.m {
+    &t {
+        &-05 {
+            margin-top: .5rem !important;
+        }
+        &-10 {
+            margin-top: 1rem !important;
+        }
+
+        &-15 {
+            margin-top: 1.5rem !important;
+        }
+
+        &-20 {
+            margin-top: 2rem !important;
+        }
+    }
+
+    &b {
+        &-05 {
+            margin-bottom: .5rem !important;
+        }
+
+        &-10 {
+            margin-bottom: 1rem !important;
+        }
+
+        &-15 {
+            margin-bottom: 1.5rem !important;
+        }
+
+        &-20 {
+            margin-bottom: 2rem !important;
+        }
+    }
+
+    &l {
+        &-05 {
+            margin-left: .5rem !important;
+        }
+
+        &-10 {
+            margin-left: 1rem !important;
+        }
+
+        &-15 {
+            margin-left: 1.5rem !important;
+        }
+
+        &-20 {
+            margin-left: 2rem !important;
+        }
+    }
+
+    &r {
+        &-05 {
+            margin-right: .5rem !important;
+        }
+
+        &-10 {
+            margin-right: 1rem !important;
+        }
+
+        &-15 {
+            margin-right: 1.5rem !important;
+        }
+
+        &-20 {
+            margin-right: 2rem !important;
+        }
+    }
+}

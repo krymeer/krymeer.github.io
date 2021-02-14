@@ -9,13 +9,13 @@ class Header extends React.Component {
     render()
     {
         return (
-            <header>
-                <h1>Hello World!</h1>
-                <nav>
-                    <a href="#home">Home</a>
-                    <a href="#about-me">About me</a>
-                    <a href="#works">Works</a>
-                    <a href="#hobbies">Hobbies</a>
+            <header className="wrapper__item">
+                <h1 className="head mb-05">Hello World!</h1>
+                <nav className="nav">
+                    <a className="nav__item" href="#home">Home</a>
+                    <a className="nav__item" href="#about-me">About me</a>
+                    <a className="nav__item" href="#works">Works</a>
+                    <a className="nav__item" href="#hobbies">Hobbies</a>
                 </nav>
             </header>
         );
@@ -31,10 +31,10 @@ class Main extends React.Component {
     render()
     {
         return (
-            <main>
-                <p>This page is only a stub, yet it is going to be my home page in the future.</p>
-                <p><span className="text-blue">Stay tuned.</span> Nifty stuff will come soon.</p>
-                <p>The page you are looking at now is <span className="text-green">{ this.props.pageName }</span>.</p>
+            <main className="wrapper__item">
+                <p className="para mb-10">This page is only a stub, yet it is going to be my home page in the future.</p>
+                <p className="para mb-10"><span className="text--blue">Stay tuned.</span> Nifty stuff will come soon.</p>
+                <p className="para">The page you are looking at now is <span className="text--green">{ this.props.pageName }</span>.</p>
             </main>
         );
     }
@@ -50,8 +50,8 @@ class Footer extends React.Component {
     render()
     {
         return (
-            <footer>
-                <p>&copy; 2021 Krzysztof R. Osada</p>
+            <footer className="wrapper__item">
+                <p className="para">&copy; 2021 Krzysztof R. Osada</p>
             </footer>
         );
     }
@@ -111,7 +111,7 @@ class App extends React.Component {
     {
 
         return (
-            <div className="container">
+            <div className="wrapper wrapper--inner">
                 <Header />
                 <Main pageName={ this.state.pageName } />
                 <Footer />
@@ -121,10 +121,12 @@ class App extends React.Component {
 }
 
 window.addEventListener( 'load', () => {
-    let wrapper = document.getElementById( 'wrapper' );
+    let appWrapper = document.getElementById( 'app-wrapper' )
 
-    if( wrapper !== null )
+    if( !appWrapper )
     {
-        ReactDOM.render( <App/>, wrapper );
+        return false;
     }
+
+    ReactDOM.render( <App />, appWrapper );
 } );
