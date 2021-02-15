@@ -6,10 +6,12 @@
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.1",
-    "@babel/preset-react": "^7.10.4"
+    "@babel/preset-react": "^7.10.4",
+    "sass": "^1.32.7"
   },
   "scripts": {
-    "babel": "npx babel --watch src/jsx --out-file-extension .min.js --out-dir docs/js --presets @babel/preset-react --minified"
+    "babel": "npx babel --watch src/jsx --out-file-extension .min.js --out-dir docs/js --presets @babel/preset-react --minified",
+    "sass": "sass --watch src/scss/styles.scss:docs/css/styles.min.css --style=compressed"
   },
   "keywords": [],
   "author": "",

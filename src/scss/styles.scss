@@ -79,6 +79,11 @@ body {
             background: colors.$white;
             color: colors.$black;
         }
+
+        &--current {
+            background: colors.$yellow;
+            color: colors.$black;
+        }
     }
 }
 
